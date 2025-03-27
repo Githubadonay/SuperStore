@@ -41,10 +41,14 @@ public void setPrice(double price){
     throw new IllegalArgumentException("Error price can not be negetive");
     this.price = price;
 }
+public double calculateSalesPrice(){
+    return this.getPrice();
+}
+
 //to string
 
 public String toString(){
-    return this.getItemCode() + "|" + this.getItemName() + "|" + this.getPrice();
+    return this.getItemCode() + " | " + this.getItemName() + " | " + this.getPrice();
 }
 
 }
